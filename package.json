@@ -1,0 +1,32 @@
+{
+  "name": "delcache",
+  "version": "0.0.1",
+  "description": "delete module cache in node safely",
+  "main": "delcache.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "benchmark": "node ./benchmarks/benchmarks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongkai/delcache.git"
+  },
+  "author": "zhongkai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhongkai/delcache/issues"
+  },
+  "homepage": "https://github.com/zhongkai/delcache#readme",
+  "dependencies": {
+    "callsite": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chalk": "^4.1.0",
+    "coveralls": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.0.1",
+    "modern-syslog": "^1.2.0"
+  }
+}
