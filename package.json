@@ -1,6 +1,6 @@
 {
   "name": "delcache",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "delete module cache in node safely",
   "main": "delcache.js",
   "scripts": {
